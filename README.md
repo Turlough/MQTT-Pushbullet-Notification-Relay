@@ -1,15 +1,13 @@
 
 # MQTT-Pushbullet Relay
-Subscribes to a MQTT topic which publishes a URL (of a video feed) occasionally. 
-When received, creates a [Pushbullet](https://www.pushbullet.com/#setup)
-notification that will be delivered to your phone and browser,
-with a link to the video feed so you can examine your new intruder.
-A timer prevents repeated (< 30 seconds interval) notifications from plaguing you.
+
+You will also need the publisher for this subscriber: https://github.com/Turlough/Object-Recognition-on-Pi-with-Movidius
+
+Effectively, this filters the objects published by topic 'camera/person', 
+and generates a notification for your phone and to your browser when a new person is detected, using [Pushbullet](https://www.pushbullet.com/). 
+
+Ideal for an IP security camera. 
 
 ## Instructions
 Edit config/fake-config.py, and save as config.py. 
-Use your own credentials and broker. 
-
-## 
-I will create companion repositories for object recognition later today (6 Mar 2019).
-These create the MQTT publications that this subscribes to.
+Use your own credentials and broker.
