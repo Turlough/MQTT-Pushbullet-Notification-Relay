@@ -9,5 +9,9 @@ and generates a notification for your phone and to your browser when a new perso
 Ideal for an IP security camera. 
 
 ## Instructions
-Edit config/fake-config.py, and save as config.py. 
-Use your own credentials and broker.
+Get your Pushbullet Api Token from [Account -> Settings -> Access Tokens](https://www.pushbullet.com/#settings/account)
+
+Edit config/fake-config.py, and save as config.py
+Use your own credentials and broker for the MQTT section, and your own access token from Pushbullet
+
+
