@@ -1,6 +1,6 @@
 certifi==2023.7.22
 chardet==3.0.4
-idna==2.8
+idna==3.7
 paho-mqtt==1.4.0
 pushbullet.py==0.11.0
 python-magic==0.4.15
